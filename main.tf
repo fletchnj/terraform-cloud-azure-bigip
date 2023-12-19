@@ -5,14 +5,14 @@ provider "azurerm" {
 }
 
 terraform {
-    required_version = "~> 0.12.26"
+    required_version = "~> 1.6.3"
     required_providers {
         azurerm = "~> 2.15.0"
     }
     backend "remote" {
-        organization = "f5-mjmenger"
+        organization = "appdelivery"
         workspaces {
-            name = "my-workspace-name"
+            name = "terraform-cloud-azure-bigip"
         }
     }
 }
