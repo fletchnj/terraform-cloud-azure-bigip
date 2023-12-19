@@ -7,7 +7,7 @@ provider "azurerm" {
 terraform {
     required_version = "~> 1.6.3"
     required_providers {
-        azurerm = "~> 2.15.0"
+        azurerm = "~> 3.85.0"
     }
     backend "remote" {
         organization = "appdelivery"
